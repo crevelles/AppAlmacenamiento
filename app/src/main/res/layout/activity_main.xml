@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margenInt"
+    tools:context="com.example.profesoresi.appalmacenamiento.MainActivity">
+
+
+    <Button
+        android:id="@+id/btnSP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:onClick="almacenarSP"
+        android:text="Almacenamiento SP" />
+
+    <Button
+        android:id="@+id/btnAI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnSP"
+        android:layout_alignRight="@+id/btnSP"
+        android:layout_below="@+id/btnSP"
+        android:layout_marginTop="20dp"
+        android:onClick="almacenarAI"
+        android:text="Almacenamiento Interno" />
+
+    <Button
+        android:id="@+id/btnAEx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/btnConsultarAI"
+        android:layout_alignRight="@+id/btnConsultarAI"
+        android:layout_below="@+id/btnConsultarAI"
+        android:layout_marginTop="20dp"
+        android:onClick="almacenarAEx"
+        android:text="Almacenamiento Externo" />
+
+    <TextView
+        android:id="@+id/tvBienvenido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="Bienvenido"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnConsultarAI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAI"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="consultarAI"
+        android:text="Consultar almacenamiento interno" />
+
+    <Button
+        android:id="@+id/btnConsultaAE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAEx"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="consultarAE"
+        android:text="Consulta Almacenamiento Externo" />
+</RelativeLayout>
